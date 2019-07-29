@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <title>Dia 4</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">PokeSearch</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="card mt-3">
+      <div class="card-header">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Pokemon a buscar" id="nombreBuscar">
+          <div class="input-group-append">
+            <button class="btn btn-success" type="button" onclick="pokeBusca();"><i
+                class="fas fa-search"></i>&nbsp;Buscar</button>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <img src="" class="img-fluid rounded" id="imgPokemon1">
+        <img src="" class="img-fluid rounded" id="imgPokemon2">
+        <img src="" class="img-fluid rounded" id="imgPokemon3">
+        <img src="" class="img-fluid rounded" id="imgPokemon4">
+        <ul>
+          <li><strong># </strong> <span id="lblId"></span></li>
+          <li><strong>Nombre :</strong> <span id="lblNombre"></span></li>
+        </ul>
+
+        <strong>Movimientos :</strong>
+        <ol id="lstMovimientos"></ol>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
